@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Sötétlila/fekete háttér */
+    background-color: #0b0710;
+    color: #e0d8ea;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    /* Nagyon finom lila színátmenet a fejlécben */
+    background: linear-gradient(135deg, #180e29 0%, #0b0710 100%);
+    border-bottom: 1px solid #2d1b4e;
+    margin-bottom: 40px;
+}
+
+/* --- PROFILKÉP STÍLUSA ÉS GLOW EFFEKT --- */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; /* Ettől lesz kör alakú */
+    object-fit: cover;  /* Ha nem tökéletes négyzet a kép, akkor sem torzul */
+    border: 3px solid #a64aff; /* Lila keret */
+    margin-bottom: 20px;
+    transition: all 0.4s ease; /* Finom animáció az átmenethez */
+}
+
+.profile-img:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #ffffff; /* Neon lilás szín */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    transition: text-shadow 0.3s ease;
+}
+
+h1:hover {
+    text-shadow: 0 0 15px rgba(133, 51, 158, 0.5);
+}
+
+.subtitle {
+    color: #a092b3;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+/* --- GOMBOK STÍLUSA ÉS GLOW EFFEKT --- */
+.filter-btn {
+    background-color: #1a102b;
+    color: #e0d8ea;
+    border: 1px solid #3d246c;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #a64aff;
+    color: #ffffff;
+    /* Fehér ragyogás a gombok körül */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    border-color: #ffffff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* --- PROJEKT KÁRTYÁK STÍLUSA ÉS GLOW EFFEKT --- */
+.project-card {
+    background-color: #130b20;
+    border: 1px solid #2d1b4e;
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card.hidden {
+    display: none;
+}
+
+.project-card:hover {
+    /* A kártya felemelkedik picit és fehéren ragyog */
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.project-title {
+    color: #f4f0f9;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    font-size: 0.85rem;
+    color: #c792ff;
+    background-color: rgba(166, 74, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: #a092b3;
+}
+
+/* --- LINKEK STÍLUSA ÉS GLOW EFFEKT --- */
+.project-links a {
+    color: #a64aff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    color: #ffffff;
+    /* A szöveg maga kap egy ragyogást */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px;
+    border-top: 1px solid #2d1b4e;
+    color: #a092b3;
+}
