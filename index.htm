@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szabó Dávid | Szoftverfejlesztő Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="https://www.linkedin.com/in/dávid-szabó-2501821b9" target="_blank"><img src="profilkep.jpg" alt="Szabó Dávid" class="profile-img"></a>
+        <h1>Szabó Dávid</h1>
+        <div class="subtitle">Szoftverfejlesztő | Java, Spring Boot, Python, MySQL, React & Vanilla JS</div>
+    </header>
+
+    <div class="container">
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Összes</button>
+            <button class="filter-btn" data-filter="java">Java Backend</button>
+            <button class="filter-btn" data-filter="react">React</button>
+            <button class="filter-btn" data-filter="vanilla">HTML/CSS/JS</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+            
+            <div class="project-card" data-category="react">
+                <div class="project-title">Versenyzőkezelő Webalkalmazás</div>
+                <span class="project-tech">React</span>
+                <p class="project-desc">Alkalmazás versenyzők kezelésére, adatok tárolása és kezelése.</p>
+                <div class="project-links">
+                    <a href="https://github.com/szdav1/CompetitionManager-Frontend" target="_blank">💻 GitHub Repo</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="java">
+                <div class="project-title">Versenykezelő Alkalmazás</div>
+                <span class="project-tech">Java, Maven</span>
+                <p class="project-desc">Grafikus alkalmazás versenyek kezelésére, adatok tárolására és kezelésére.</p>
+                <div class="project-links">
+                    <a href="https://github.com/szdav1/CompetitionManager-Admin" target="_blank">💻 GitHub Repo</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="java">
+                <div class="project-title">Versenyzőkezelő alkalmazás</div>
+                <span class="project-tech">Java, Spring Boot</span>
+                <p class="project-desc">Egy modern, kliens-oldali feladatkezelő alkalmazás, amely a React állapotkezelését használja az adatok szinkronizálására.</p>
+                <div class="project-links">
+                    <a href="https://github.com/szdav1/CompetitionManager-Backend" target="_blank">💻 GitHub Repo</a>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="vanilla">
+                <div class="project-title">RPI OS tesztek bemutatása</div>
+                <span class="project-tech">HTML5, CSS3, Vanilla JS</span>
+                <p class="project-desc">Egyedi tervezésű weboldal keretrendszerek nélkül.</p>
+                <div class="project-links">
+                    <a href="https://github.com/szxbodavee23/RPI-OS" target="_blank">💻 GitHub Repo</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Kapcsolat: davedszabo@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
