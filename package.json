@@ -1,0 +1,12 @@
+{
+  "name": "szxbodavee23-portfolio",
+  "version": "1.0.0",
+  "description": "Szabó Dávid Portfolio Website",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site - no build step required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
